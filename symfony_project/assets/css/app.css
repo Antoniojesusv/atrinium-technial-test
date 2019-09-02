@@ -1,0 +1,8 @@
+@import "~bootstrap/dist/css/bootstrap-grid.min";
+@import "~bootstrap/dist/css/bootstrap.min";
+@import "./simple-sidebar.css";
+@import "./custom.css";
+
+body {
+  background-color: lightgray;
+}

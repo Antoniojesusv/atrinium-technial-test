@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Company
+{% endblock %}
+
+{% block body %}{% endblock %}
+
+{% block main %}
+    <h1>Create new Company</h1>
+
+    {{ include('company/_form.html.twig') }}
+
+    <a href="{{ path('company_index') }}">
+        <button class="btn btn-success">
+            Cancel</button>
+    </a>
+{% endblock %}

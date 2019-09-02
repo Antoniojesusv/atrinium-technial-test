@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Company index
+{% endblock %}
+
+{% block body %}{% endblock %}
+
+{% block main %}
+    <section class="section-new row justify-content-end">
+        <a href="{{ path('sector_new') }}">
+            <button class="btn btn-success">
+                <i class="fa fa-edit"></i>New</button>
+        </a>
+    </section>
+    {{ include('components/table/table-sectors/table-sectors.html.twig') }}
+{% endblock %}

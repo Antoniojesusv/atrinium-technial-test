@@ -1,0 +1,36 @@
+Arguments: 
+  /home/antonio/.nvm/versions/node/v10.10.0/bin/node /usr/share/yarn/bin/yarn.js add bootsatrp --dev
+
+PATH: 
+  /home/antonio/.nvm/versions/node/v10.10.0/bin:/opt/apache-maven/bin:/opt/apache-maven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/antonio/.composer/vendor/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/antonio/.composer/vendor/bin:/home/antonio/.composer/vendor/bin:/home/antonio/.composer/vendor/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/bootsatrp: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66830:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140464:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141436:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141358:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1092:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

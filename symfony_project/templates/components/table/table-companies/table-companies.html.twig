@@ -1,0 +1,34 @@
+{% extends "components/table/table.html.twig" %}
+
+{% block thead %}
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Sector</th>
+        <th scope="col">Actions</th>
+    </tr>
+{% endblock %}
+
+{% block tbody %}
+    {% for id, company in companies %}
+        <tr>
+            <th scope="row">{{ company.id }}</th>
+            <td>{{ company.name }}</td>
+            <td>{{ company.phone }}</td>
+            <td>{{ company.email }}</td>
+            <td>{{ sector[id] }}</td>
+            <td>
+                <a href="{{ path('company_edit', {'id': company.id}) }}">
+                    <button class="btn btn-secondary">
+                        <i class="fa fa-edit"></i>Edit</button>
+                </a>
+                <a href="{{ path('company_form_render', {'id': company.id}) }}">
+                    <button class="btn btn-danger">
+                        <i class="fa fa-trash"></i>Delete</button>
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+{% endblock %}

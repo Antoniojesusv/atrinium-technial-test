@@ -1,0 +1,6 @@
+/symfony_project/vendor
+/symfony_project/node_modules
+/data
+/vendor/
+/symfony_project/package-lock.json
+/symfony_project/composer.lock

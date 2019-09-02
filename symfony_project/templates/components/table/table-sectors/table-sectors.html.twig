@@ -1,0 +1,28 @@
+{% extends "components/table/table.html.twig" %}
+
+{% block thead %}
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Actions</th>
+    </tr>
+{% endblock %}
+
+{% block tbody %}
+    {% for sector in sectors %}
+        <tr>
+            <th scope="row">{{ sector.id }}</th>
+            <td>{{ sector.name }}</td>
+            <td>
+                <a href="{{ path('sector_edit', {'id': sector.id}) }}">
+                    <button class="btn btn-secondary">
+                        <i class="fa fa-edit"></i>Edit</button>
+                </a>
+                <a href="{{ path('sector_form_render', {'id': sector.id}) }}">
+                    <button class="btn btn-danger">
+                        <i class="fa fa-trash"></i>Delete</button>
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+{% endblock %}

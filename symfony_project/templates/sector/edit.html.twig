@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Company
+{% endblock %}
+
+{% block body %}{% endblock %}
+
+{% block main %}
+    <h1>Edit Sector</h1>
+
+    {{ include('sector/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('sector_index') }}">
+        <button class="btn btn-success">
+            Cancel</button>
+    </a>
+{% endblock %}
